@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Vincent Augusto - Resume</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.75in;
+            line-height: 1.5;
+            font-size: 11pt;
+            color: #333;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #2c3e50;
+        }
+        
+        .name {
+            font-size: 28pt;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+        
+        .title {
+            font-size: 14pt;
+            color: #7f8c8d;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-size: 10pt;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .contact-item {
+            text-align: center;
+            padding: 5px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 14pt;
+            font-weight: 600;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #bdc3c7;
+        }
+        
+        .profile-text {
+            text-align: justify;
+            margin-bottom: 15px;
+            font-size: 11pt;
+            line-height: 1.6;
+        }
+        
+        .highlight {
+            font-weight: 600;
+            color: #2980b9;
+        }
+        
+        .education-item {
+            margin-bottom: 25px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .degree-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        
+        .degree {
+            font-weight: 600;
+            font-size: 12pt;
+            color: #2c3e50;
+        }
+        
+        .date-location {
+            font-size: 10pt;
+            color: #7f8c8d;
+            text-align: right;
+        }
+        
+        .university {
+            font-size: 11pt;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        
+        .activity {
+            margin-bottom: 20px;
+            padding: 12px;
+            background: white;
+            border-radius: 3px;
+            border: 1px solid #ecf0f1;
+        }
+        
+        .activity-title {
+            font-weight: 600;
+            color: #2980b9;
+            font-size: 11pt;
+            margin-bottom: 3px;
+        }
+        
+        .activity-subtitle {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 10pt;
+            margin-bottom: 8px;
+        }
+        
+        .activity ul {
+            margin: 8px 0 0 0;
+            padding-left: 18px;
+        }
+        
+        .activity li {
+            margin-bottom: 6px;
+            font-size: 10pt;
+            line-height: 1.4;
+        }
+        
+        .skills-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            border-left: 4px solid #e74c3c;
+        }
+        
+        .skill-category h3 {
+            margin: 0 0 15px 0;
+            font-size: 12pt;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        .skill-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 5px 0;
+        }
+        
+        .skill-name {
+            font-weight: 500;
+            font-size: 10pt;
+        }
+        
+        .skill-level {
+            font-size: 9pt;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-weight: 500;
+        }
+        
+        .expert { background: #27ae60; color: white; }
+        .experienced { background: #f39c12; color: white; }
+        .skillful { background: #3498db; color: white; }
+        .beginner { background: #95a5a6; color: white; }
+        .novice { background: #bdc3c7; color: #2c3e50; }
+        
+        .certifications {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            border-left: 4px solid #9b59b6;
+        }
+        
+        .cert-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            padding: 8px 0;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .cert-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        .cert-name {
+            font-weight: 500;
+            font-size: 10pt;
+        }
+        
+        .in-progress {
+            font-size: 9pt;
+            color: #e67e22;
+            font-style: italic;
+            font-weight: 500;
+        }
+        
+        .links {
+            text-align: center;
+            font-size: 10pt;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="name">John Vincent Augusto</div>
+        <div class="title">DevOps Engineer & Cloud Developer</div>
+        <div class="contact-grid">
+            <div class="contact-item">📧 jvaugusto30@gmail.com</div>
+            <div class="contact-item">📱 +63 994 951 0587</div>
+            <div class="contact-item">📍 Lapu-Lapu City, Philippines</div>
+            <div class="contact-item">🎂 May 30, 2005</div>
+        </div>
+        <div class="links">GitHub • LinkedIn • Facebook</div>
+    </div>
+    
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <div class="profile-text">
+            <span class="highlight">Community-driven DevOps Engineer</span> with expertise in automation, CI/CD pipelines, and collaborative development. Currently serving as <span class="highlight">Technical Lead for AWS Community Day Cebu 2025</span>, managing technical infrastructure and open-source initiatives. Proven track record in building robust deployment pipelines using GitHub Actions, AWS Amplify, and modern web technologies.
+        </div>
+        <div class="profile-text">
+            Passionate about <span class="highlight">cloud technologies and community building</span>, with hands-on experience in both Google Cloud and AWS ecosystems. Demonstrated leadership in organizing technical workshops, competitive programming, and fostering cloud adoption among student communities.
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div class="education-item">
+            <div class="degree-header">
+                <div>
+                    <div class="degree">Bachelor of Science in Computer Engineering</div>
+                    <div class="university">Cebu Technological University</div>
+                </div>
+                <div class="date-location">
+                    Aug 2023 – Jul 2027<br>
+                    Cebu, Philippines
+                </div>
+            </div>
+            
+            <div class="activity">
+                <div class="activity-title">Academic Achievement</div>
+                <div class="activity-subtitle">CPE Days Programming Competition • 2024</div>
+                <ul>
+                    <li>🏆 <strong>Second Runner-Up</strong> in C++ Coding Competition</li>
+                    <li>Competed against top students in algorithmic challenges focused on data structures and logic-based problems</li>
+                    <li>Demonstrated exceptional problem-solving skills in competitive programming environment</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="section-title">Leadership Experience</div>
+        
+        <div class="activity">
+            <div class="activity-title">Technical Lead</div>
+            <div class="activity-subtitle">AWS Community Day Cebu 2025 • 2024–2025</div>
+            <ul>
+                <li>Leading technical infrastructure setup including KonfHub platform and open-source event website</li>
+                <li>Architected and implemented CI/CD pipeline using AWS Amplify, GitHub Actions, CodeQL, and Dependabot</li>
+                <li>Made strategic technology decisions (Next.js, Tailwind CSS) to lower entry barriers and promote adoption</li>
+                <li>Initiated open-source project strategy to encourage community contribution</li>
+            </ul>
+        </div>
+        
+        <div class="activity">
+            <div class="activity-title">Cloud Development Lead</div>
+            <div class="activity-subtitle">Google Developer Student Club – Campus Chapter • 2024–2025</div>
+            <ul>
+                <li>Spearheaded cloud-related initiatives, workshops, and technical projects focused on Google Cloud technologies</li>
+                <li>Led cross-functional team in promoting cloud literacy and practical skills among students</li>
+                <li>Organized Git and GitHub workshop achieving <strong>1,000+ Facebook views</strong> and highest live viewership in chapter history</li>
+            </ul>
+        </div>
+        
+        <div class="activity">
+            <div class="activity-title">Cloud Club Captain</div>
+            <div class="activity-subtitle">AWS Cloud Club – Campus Chapter • 2025–2026</div>
+            <ul>
+                <li>Appointed as lead representative for AWS student cloud community</li>
+                <li>Organizing hands-on labs, certification preparation, and technical events</li>
+                <li>Fostering cloud adoption and technical growth within university ecosystem</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Programming & Development</h3>
+                <div class="skill-item">
+                    <span class="skill-name">HTML & CSS</span>
+                    <span class="skill-level expert">Expert</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Git</span>
+                    <span class="skill-level expert">Expert</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">GitHub</span>
+                    <span class="skill-level expert">Expert</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">C++</span>
+                    <span class="skill-level experienced">Experienced</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Linux</span>
+                    <span class="skill-level experienced">Experienced</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Java</span>
+                    <span class="skill-level skillful">Skillful</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Python</span>
+                    <span class="skill-level skillful">Skillful</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Cloud & DevOps</h3>
+                <div class="skill-item">
+                    <span class="skill-name">AWS Cloud</span>
+                    <span class="skill-level skillful">Skillful</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Docker</span>
+                    <span class="skill-level skillful">Skillful</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Bash</span>
+                    <span class="skill-level skillful">Skillful</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Google Cloud</span>
+                    <span class="skill-level beginner">Beginner</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Terraform</span>
+                    <span class="skill-level novice">Novice</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Kubernetes</span>
+                    <span class="skill-level novice">Novice</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="section-title">Certifications</div>
+        <div class="certifications">
+            <div class="cert-item">
+                <span class="cert-name">AWS Certified Cloud Practitioner</span>
+                <span class="in-progress">In Progress</span>
+            </div>
+            <div class="cert-item">
+                <span class="cert-name">Linux Foundation Certified IT Associate (LFCA)</span>
+                <span class="in-progress">In Progress</span>
+            </div>
+            <div class="cert-item">
+                <span class="cert-name">Docker Certified Associate (DCA)</span>
+                <span class="in-progress">In Progress</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
